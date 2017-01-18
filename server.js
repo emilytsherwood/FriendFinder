@@ -14,12 +14,20 @@ var path = require("path");
 
  //Starts the server to beign listening
  app.listen(PORT, function() {
- 	console.log("App listening on PORT " + PORT);
+ 	console.log("App listening on Port " + PORT);
  });
 
+//Basic route that sends the user first to the Home/Default Page
+app.get("/", function(req, res) {
+  res.sendFile(path.join(__dirname, "./app/public/home.html"));
+});
 
-// // Starts the server to begin listening
-// // =============================================================
-// app.listen(PORT, function() {
-//   console.log("App listening on PORT " + PORT);
-// });
+app.get("/home", function(req, res) {
+	res.sendFile(path.join(__dirname, "./app/public/home.html"));
+});
+
+//Sends user to the survey page when they type in /survey
+app.get("/survey", function(req, res) {
+  res.sendFile(path.join(__dirname, "./app/public/survey.html"));
+});
+

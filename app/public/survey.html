@@ -132,6 +132,18 @@
 			<span class="glyphicon glyphicon-hand-right"></span> Submit</button>
 	</div>
 	<hr>
+<script type="text/javascript">
+  $(document).ready(function(){
+   var queryURL = "http://localhost:3000/api/survey";
+$.ajax({
+      url: queryURL,
+      method: 'GET',
+    }).done(function(response) {
+      console.log(response);
+    });
+});
+</script>
+
 </body>
 
 </html>

@@ -6,6 +6,7 @@ var path = require("path");
 //Setting up the Express app to do routing through the front-end
  var app = express();
 
+ require("./app/routing/apiRoutes")(app);
  require("./app/routing/htmlRoutes")(app);
 
  var PORT = 3000;
@@ -14,7 +15,7 @@ var path = require("path");
  app.use(bodyParser.json());
  app.use(bodyParser.urlencoded({ extended: true }));
  app.use(bodyParser.text());
- app.use(bodyParser.json({ type: "application/vnd.api+json" }));
+ app.use(bodyParser.json({ types: "application/vnd.api+json" }));
 
  //Starts the server to beign listening
  app.listen(PORT, function() {

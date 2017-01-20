@@ -17,122 +17,154 @@
         <h3>About You</h3>
         <div class="input-group">
             <h4>Name (Required)</h4>
-            <input type="text" class="form-control" placeholder="Name" aria-describedby="basic-addon1" required>
+            <input type="text" class="form-control" id="user-name" placeholder="Name" aria-describedby="basic-addon1" required>
         </div>
         <div class="input-group">
             <h4>Link to Photo Image (Required)</h4>
-            <input type="text" class="form-control" placeholder="Photo Link" aria-describedby="basic-addon1" required>
+            <input type="text" class="form-control" id="user-photo" placeholder="Photo Link" aria-describedby="basic-addon1" required>
         </div>
     </div>
     <div class="container">
-    <hr>	
-		<h3><strong>Question 1</strong></h3>
-		<h4>Playing board games is a fun way to break the ice.</h4>
-		<select>
-			<option selected disabled>Select an Option</option>
-  			<option value="1">1 (Strongly Disagree)</option>
-  			<option value="2">2</option>
-  			<option value="3">3</option>
-  			<option value="4">4</option>
-  			<option value="5">5 (Strongly Agree)</option>
-		</select>
-		<h3><strong>Question 2</strong></h3>
-		<h4>You love thrills; rollercoasters, sky-diving, cliff-jumping...</h4>
-		<select>
-			<option selected disabled>Select an Option</option>
-  			<option value="1">1 (Strongly Disagree)</option>
-  			<option value="2">2</option>
-  			<option value="3">3</option>
-  			<option value="4">4</option>
-  			<option value="5">5 (Strongly Agree)</option>
-		</select>
-		<h3><strong>Question 3</strong></h3>
-		<h4>You like to try new cuisines and foods often.</h4>
-		<select>
-			<option selected disabled>Select an Option</option>
-  			<option value="1">1 (Strongly Disagree)</option>
-  			<option value="2">2</option>
-  			<option value="3">3</option>
-  			<option value="4">4</option>
-  			<option value="5">5 (Strongly Agree)</option>
-		</select>
-		<h3><strong>Question 4</strong></h3>
-		<h4>You hate everything about the outdoors. Inside is where it's at!</h4>
-		<select>
-			<option selected disabled>Select an Option</option>
-  			<option value="1">1 (Strongly Disagree)</option>
-  			<option value="2">2</option>
-  			<option value="3">3</option>
-  			<option value="4">4</option>
-  			<option value="5">5 (Strongly Agree)</option>
-		</select>
-		<h3><strong>Question 5</strong></h3>
-		<h4>You believe that everything in life will work itself out at the end.</h4>
-		<select>
-			<option selected disabled>Select an Option</option>
-  			<option value="1">1 (Strongly Disagree)</option>
-  			<option value="2">2</option>
-  			<option value="3">3</option>
-  			<option value="4">4</option>
-  			<option value="5">5 (Strongly Agree)</option>
-		</select>
-		<h3><strong>Question 6</strong></h3>
-		<h4>Eating animals is a sin!</h4>
-		<select>
-			<option selected disabled>Select an Option</option>
-  			<option value="1">1 (Strongly Disagree)</option>
-  			<option value="2">2</option>
-  			<option value="3">3</option>
-  			<option value="4">4</option>
-  			<option value="5">5 (Strongly Agree)</option>
-		</select>
-		<h3><strong>Question 7</strong></h3>
-		<h4>Going to the club on a Friday night is the ideal way to relax.</h4>
-		<select>
-			<option selected disabled>Select an Option</option>
-  			<option value="1">1 (Strongly Disagree)</option>
-  			<option value="2">2</option>
-  			<option value="3">3</option>
-  			<option value="4">4</option>
-  			<option value="5">5 (Strongly Agree)</option>
-		</select>
-		<h3><strong>Question 8</strong></h3>
-		<h4>Going to a mustache museum is a great way to spend a Saturday afternoon.</h4>
-		<select>
-			<option selected disabled>Select an Option</option>
-  			<option value="1">1 (Strongly Disagree)</option>
-  			<option value="2">2</option>
-  			<option value="3">3</option>
-  			<option value="4">4</option>
-  			<option value="5">5 (Strongly Agree)</option>
-		</select>
-		<h3><strong>Question 9</strong></h3>
-		<h4>Being neat and tidy is key to one's success.</h4>
-		<select>
-			<option selected disabled>Select an Option</option>
-  			<option value="1">1 (Strongly Disagree)</option>
-  			<option value="2">2</option>
-  			<option value="3">3</option>
-  			<option value="4">4</option>
-  			<option value="5">5 (Strongly Agree)</option>
-		</select>
-		<h3><strong>Question 10</strong></h3>
-		<h4>You prefer to hang out in large groups rather than small groups.</h4>
-		<select>
-			<option selected disabled>Select an Option</option>
-  			<option value="1">1 (Strongly Disagree)</option>
-  			<option value="2">2</option>
-  			<option value="3">3</option>
-  			<option value="4">4</option>
-  			<option value="5">5 (Strongly Agree)</option>
-		</select>
-		<br>
-		<br>
-		<button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">
-			<span class="glyphicon glyphicon-hand-right"></span> Submit</button>
-	</div>
-	<hr>
+        <hr>
+        <h3><strong>Question 1</strong></h3>
+        <h4>Playing board games is a fun way to break the ice.</h4>
+        <select id="question1">
+            <option selected disabled>Select an Option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h3><strong>Question 2</strong></h3>
+        <h4>You love thrills; rollercoasters, sky-diving, cliff-jumping...</h4>
+        <select id="question2">
+            <option selected disabled>Select an Option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h3><strong>Question 3</strong></h3>
+        <h4>You like to try new cuisines and foods often.</h4>
+        <select id="question3">
+            <option selected disabled>Select an Option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h3><strong>Question 4</strong></h3>
+        <h4>You hate everything about the outdoors. Inside is where it's at!</h4>
+        <select id="question4">
+            <option selected disabled>Select an Option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h3><strong>Question 5</strong></h3>
+        <h4>You believe that everything in life will work itself out at the end.</h4>
+        <select id="question5">
+            <option selected disabled>Select an Option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h3><strong>Question 6</strong></h3>
+        <h4>Eating animals is a sin!</h4>
+        <select id="question6">
+            <option selected disabled>Select an Option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h3><strong>Question 7</strong></h3>
+        <h4>Going to the club on a Friday night is the ideal way to relax.</h4>
+        <select id="question7">
+            <option selected disabled>Select an Option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h3><strong>Question 8</strong></h3>
+        <h4>Going to a mustache museum is a great way to spend a Saturday afternoon.</h4>
+        <select id="question8">
+            <option selected disabled>Select an Option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h3><strong>Question 9</strong></h3>
+        <h4>Being neat and tidy is key to one's success.</h4>
+        <select id="question9">
+            <option selected disabled>Select an Option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h3><strong>Question 10</strong></h3>
+        <h4>You prefer to hang out in large groups rather than small groups.</h4>
+        <select id="question10">
+            <option selected disabled>Select an Option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">
+            <span class="glyphicon glyphicon-hand-right"></span> Submit</button>
+    </div>
+    <hr>
 
+<!-- Modal -->
+    <div class="modal fade">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">A Match has been Made!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>You're new best friend is...</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script type="text/javascript">
+    //Grabbing the user's data
+    $('submit').on('click', function() {
+        var userAnswers = {
+            name: $('#user-name').val().trim(),
+            photo: $('#user-photo').val().trim(),
+            scores: [$('#question1').val().trim(), $('#question2').val().trim(), $('#question3').val().trim(), $('#question4').val().trim(), $('#question5').val().trim(), $('question6').val().trim(), $('question7').val().trim(), $('question8').val().trim(), $('question9').val().trim(), $('question10').val().trim()]
+                //Need to do something with this data
+        };
+    });
+    </script>
 </body>
 
 </html>
+

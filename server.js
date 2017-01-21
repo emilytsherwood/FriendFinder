@@ -9,8 +9,7 @@ var path = require("path");
  require("./app/routing/apiRoutes")(app);
  require("./app/routing/htmlRoutes")(app);
 
- var PORT = 3000;
-
+ var PORT = process.env.PORT || 3000;
 
  app.use(bodyParser.json());
  app.use(bodyParser.urlencoded({ extended: true }));
